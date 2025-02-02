@@ -14,12 +14,11 @@
 
 body {
     background-color: var(--background-yellow-colour);
-    height: 100vh;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     margin: 0;
     padding: 0;
 
@@ -29,13 +28,12 @@ body {
 
 .card {
     background-color: var(--card-white-colour);
-    width: 370px;
-    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
-
+    width: 370px;
+    height: 500px;
     border-radius: 20px;
     box-shadow: 8px 8px 0px 0px hsl(0, 0%, 7%);
     border: 1px solid black;
