@@ -88,6 +88,7 @@ table {
     align-self: left;
     margin-left:0px;
     color: var(--brown-800);
+    border-bottom: 1px solid rgb(238, 238, 238);
 }
 
 .table-key-last {
@@ -95,6 +96,13 @@ table {
     color: var(--stone-600);
     padding: 18px 0px 18px 45px;
     width: 50%;
+}
+
+.table-value-last {
+    font-weight: 600;
+    align-self: left;
+    margin-left:0px;
+    color: var(--brown-800);
 }
 
 .title {
@@ -186,10 +194,167 @@ table {
 }
 
 
+@media (max-width: 1000px) {
+    main {
+        min-width: 375px;
+        min-height: 2160px;
+        width: 100vw;
+        height: 266vh;
+        margin: 0;
+    }
+
+    img {
+        width: 100vw;
+        border-radius: 0px;
+        align-self: center;
+        margin: 0;
+    }
+
+        
+    li {
+        padding-left: 5px;
+    }
+
+    hr {
+        border: 1px solid rgb(224, 224, 224);
+        opacity: 0.8;
+        margin: 15px 25px;
+    }
+
+    table {
+        width: 90%;
+        align-self: center;
+        border-collapse: collapse;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    .table-key {
+        font-weight: 400;
+        color: var(--stone-600);
+        padding: 18px 0px 18px 45px;
+        width: 50%;
+        border-bottom: 1px solid rgb(238, 238, 238);
+    }
+
+    .table-value {
+        font-weight: 600;
+        align-self: left;
+        margin-left:0px;
+        color: var(--brown-800);
+        border-bottom: 1px solid rgb(238, 238, 238);
+    }
+
+    .table-key-last {
+        font-weight: 400;
+        color: var(--stone-600);
+        padding: 18px 0px 18px 45px;
+        width: 50%;
+    }
+    
+    .table-value-last {
+        font-weight: 600;
+        align-self: left;
+        margin-left:0px;
+        color: var(--brown-800);
+    }
+
+    .title {
+        font-family: 'Young Serif';
+        margin-left: 30px;
+        font-weight: 500;
+        color: var(--stone-900);
+        
+    }
+
+    .description {
+        margin: 0px 30px 0px;
+        color: var(--stone-600);
+        font-size: 16px;
+        font-weight: 350;
+    }
+
+    .preparation {
+        background-color: var(--rose-50);
+        margin: 35px 30px 0px;
+        border-radius: 10px;
+    }
+
+    .preparation-title {
+        margin: 20px 20px 0px;
+        color: var(--rose-800);
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .preparation-list {
+        color: var(--stone-600);
+        line-height: 225%;
+        margin: 10px 10px 30px;
+    }
+
+    .ingredients {
+        margin: 10px 30px 0px;
+    }
+
+    .ingredients-title {
+        font-family: 'Young Serif';
+        font-weight: 400;
+        color: var(--brown-800);
+        margin-bottom: 5px;
+    }
+
+    .ingredients-list {
+        color: var(--stone-600);
+        line-height: 225%;
+        margin-top: 0px;
+    }
+
+    .instructions {
+        margin: 0px 30px 0px;
+    }
+
+    .instructions-title {
+        font-family: 'Young Serif';
+        font-weight: 400;
+        color: var(--brown-800);
+        margin-bottom: 5px;
+    }
+
+    .instructions-list {
+        color: var(--stone-600);
+        line-height: 165%;
+        margin: 12px 20px 21px 0px;
+    }
+
+    .instructions-item {
+        margin-bottom: 9px;
+    }
+
+    .nutrition {
+        margin: 0px 30px 0px;
+    }
+
+    .nutrition-title {
+        font-family: 'Young Serif';
+        font-weight: 400;
+        color: var(--brown-800);
+        margin-bottom: 5px;
+    }
+
+    .nutrition-description {
+        color: var(--stone-600);
+        font-weight: 450;
+    }
+
+}
+
+
 /* Attribution styling */
 .attribution { 
     font-size: 11px;
     text-align: center;
+    margin-top: 20px;
     margin-bottom: 10px;
     font-family: "Outfit", sans-serif;
 }
