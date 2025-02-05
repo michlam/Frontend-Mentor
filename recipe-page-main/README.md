@@ -32,8 +32,6 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 - CSS custom properties
 - Flexbox
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
 ### What I learned
 
 Building on the previous challenge, I spent more effort getting the mobile device responsiveness down. I believe I have improved in that regard. This was also my first time working with styling tables, which was more doable than I imagined. All in all, a great learning experience!
