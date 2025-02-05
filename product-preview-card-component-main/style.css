@@ -33,7 +33,7 @@ body {
     min-height: 509px;
     min-width: 679px;
     width: 34vw;
-    height: 55vh;
+    height: 509px;
     border-radius: 15px;
 
     display: flex;
@@ -44,9 +44,12 @@ body {
     overflow: hidden;
 }
 
-.card-container img {
-    max-width: 100%;
-    height: auto;
+.card-container picture {
+    max-width: 50%;
+}
+
+.product-image {
+    width: 339.5px;
 }
 
 .content {
@@ -133,6 +136,41 @@ body {
     color: var(--white);
 
     margin-left: 15px;
+}
+
+
+
+
+@media (max-width: 678px) {
+    .card-container {
+        min-width: 0px;
+        min-height: 0px;
+        width: 337.5px;
+        height: 700px;
+        margin: 0;
+
+
+        flex-direction: column;
+    }
+    
+    .card-container picture {
+        max-width: 100%;
+    }
+
+    .product-image {
+        width: 375.5px;
+        
+    }
+
+    .content {
+        padding: 20px;
+    }
+    
+    .title {
+        font-size: 32px;
+        margin-top: 15px;
+    }
+
 }
 
 
