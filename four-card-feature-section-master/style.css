@@ -1,0 +1,244 @@
+:root {
+    /* Colours */
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+body {
+    background-color: var(--very-light-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Poppins';
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 275px;
+    margin-top: 40px;
+}
+
+header p {
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--cyan);
+    text-align: center;
+
+    width: 500px;
+}
+
+.title-1 {
+    font-weight: 200;
+    font-size: 2.3rem;
+    color: var(--very-dark-blue);
+    margin: 0;
+}
+
+.title-2 {
+    font-weight: 600;
+    font-size: 2.3rem;
+    color: var(--very-dark-blue);
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1100px;
+    gap: 30px;
+
+    margin: 0px 0px 30px;
+}
+
+.section-supervisor {
+    width: 353px;
+    height: 250px;
+    background-color: white;
+    border-radius: 5px;
+
+    box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    padding: 10px 30px;
+    border-top: 4px solid var(--cyan);
+}
+
+.section-supervisor h3 {
+    font-weight: 600;
+    color: var(--very-dark-blue);
+    margin-bottom: 0px;
+}
+
+.section-supervisor p {
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--cyan);
+    line-height: 180%;
+
+    margin-top: 5px;
+}
+
+.section-supervisor img {
+    margin-top: 30px;
+    margin-left: 220px;
+}
+
+.center-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 353px;
+
+    gap: 30px;
+}
+
+.section-team-builder {
+    width: 353px;
+    height: 250px;
+    background-color: white;
+    border-radius: 5px;
+
+    box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    padding: 10px 30px;
+    border-top: 4px solid var(--red);
+}
+
+.section-team-builder h3 {
+    font-weight: 600;
+    color: var(--very-dark-blue);
+    margin-bottom: 0px;
+}
+
+.section-team-builder p {
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--cyan);
+    line-height: 180%;
+
+    margin-top: 5px;
+}
+
+.section-team-builder img {
+    margin-top: 30px;
+    margin-left: 220px;
+}
+
+.section-karma {
+    width: 353px;
+    height: 250px;
+    background-color: white;
+    border-radius: 5px;
+
+    box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    padding: 10px 30px;
+    border-top: 4px solid var(--orange);
+}
+
+.section-karma h3 {
+    font-weight: 600;
+    color: var(--very-dark-blue);
+    margin-bottom: 0px;
+}
+
+.section-karma p {
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--cyan);
+    line-height: 180%;
+
+    margin-top: 5px;
+}
+
+.section-karma img {
+    margin-top: 30px;
+    margin-left: 220px;
+}
+
+.section-calculator {
+    width: 353px;
+    height: 250px;
+    background-color: white;
+    border-radius: 5px;
+
+    box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    padding: 10px 30px;
+    border-top: 4px solid var(--blue);
+}
+
+.section-calculator h3 {
+    font-weight: 600;
+    color: var(--very-dark-blue);
+    margin-bottom: 0px;
+}
+
+.section-calculator p {
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--cyan);
+    line-height: 180%;
+
+    margin-top: 5px;
+}
+
+.section-calculator img {
+    margin-top: 30px;
+    margin-left: 220px;
+}
+
+
+@media (max-width: 1000px) {
+    main {
+        flex-direction: column;
+        min-width: 300px;
+    }
+
+    header {
+        width: 375px;
+        height: 300px;
+        min-width: 375px;
+        margin-top: 35px;
+    }
+    
+    header p {
+        width: 300px;
+    }
+    
+    .title-1 {
+        font-size: 1.6rem;
+    }
+    
+    .title-2 {
+        font-size: 1.6rem;
+    }
+}
+
+/* Attribution styling */
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    
+    position: fixed;
+    bottom: 0;
+}
+
+.attribution a {
+    color: var(--brown-800);
+}
