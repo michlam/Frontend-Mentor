@@ -98,7 +98,6 @@ main {
     margin-left: 220px;
 }
 
-
 .center-row {
     display: flex;
     flex-direction: column;
@@ -106,11 +105,7 @@ main {
     width: 353px;
 
     gap: 30px;
-} 
-
-
-
-
+}
 
 .section-team-builder {
     width: 353px;
@@ -144,11 +139,6 @@ main {
     margin-left: 220px;
 }
 
-
-
-
-
-
 .section-karma {
     width: 353px;
     height: 250px;
@@ -180,11 +170,6 @@ main {
     margin-top: 30px;
     margin-left: 220px;
 }
-
-
-
-
-
 
 .section-calculator {
     width: 353px;
@@ -219,6 +204,31 @@ main {
 }
 
 
+@media (max-width: 1000px) {
+    main {
+        flex-direction: column;
+        min-width: 300px;
+    }
+
+    header {
+        width: 375px;
+        height: 300px;
+        min-width: 375px;
+        margin-top: 35px;
+    }
+    
+    header p {
+        width: 300px;
+    }
+    
+    .title-1 {
+        font-size: 1.6rem;
+    }
+    
+    .title-2 {
+        font-size: 1.6rem;
+    }
+}
 
 /* Attribution styling */
 .attribution { 
