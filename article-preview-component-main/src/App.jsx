@@ -4,6 +4,10 @@ import ShareComponent from './ShareComponent';
 
 function App() {
   const [shareClicked, setShareClicked] = useState(false);
+  function handleClick() {
+    setShareClicked((prev) => (!prev));
+    console.log("It is now clicked: " + shareClicked);
+  }
 
   return (
     <>
@@ -30,10 +34,10 @@ function App() {
               <p>28 Jun 2020</p>
             </div>
 
-            <div className='share-icon'>
+            <div className='share-icon' onClick={handleClick}>
               <img src='/src/images/icon-share.svg'></img>
+              {shareClicked ? <ShareComponent /> : null}
             </div>
-            {shareClicked ? <ShareComponent /> : null}
           </div>
         </section>
       </main>
