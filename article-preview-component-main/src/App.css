@@ -1,0 +1,135 @@
+:root {
+    /* Colours */
+    --very-dark-grayish-blue:    hsl(217, 19%, 35%);
+    --desaturated-dark-blue:     hsl(214, 17%, 51%);
+    --grayish-blue:              hsl(212, 23%, 69%);
+    --light-grayish-blue:        hsl(210, 46%, 95%);
+
+    font-size: 13px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+
+    width: 740px;
+    height: 290px;
+
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 15px 25px 0px rgba(0, 0, 255, .1);
+}
+
+.thumbnail {
+    min-width: 290px;
+    height: 290px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; 
+    overflow: hidden;
+}
+
+.thumbnail img {
+    height: 290px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 40px;
+}
+
+section h1 {
+    color: var(--very-dark-grayish-blue);
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+section p {
+    color: var(--desaturated-dark-blue);
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0px 0px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.author-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 160px;
+
+    font-weight: 500;
+}
+
+.author-container h4 {
+    margin: 0;
+    color: var(--very-dark-grayish-blue);
+}
+
+.author-container p {
+    margin: 2px 0px 0px;
+    color: var(--grayish-blue);
+}
+
+.share-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-grayish-blue);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    position:relative
+}
+
+.share-icon:hover {
+    background-color: var(--very-dark-grayish-blue);
+}
+
+@media (max-width: 740px) {    
+    main {
+        flex-direction: column;
+
+        width: 370px;
+        height: 550px;
+    }
+
+    .thumbnail {
+        min-width: 370px;
+        min-height: 240px;
+        width: 370px;
+        height: 240px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px; 
+        border-bottom-left-radius: 0px;
+        overflow: hidden;
+    }
+    
+    .thumbnail img {
+        height: 300px;
+    }
+
+    section {
+        margin: 40px 50px;
+    }
+
+    section p {
+        line-height: 170%;
+    }
+ 
+    .author-container {
+        margin-right: 60px;
+    }
+}
