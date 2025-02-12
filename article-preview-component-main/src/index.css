@@ -15,7 +15,6 @@ body {
     align-items: center;
 
     font-family: 'Manrope';
-    font-size: 13px;
 }
 
 /* Attribution styling */
@@ -29,4 +28,11 @@ body {
 
 footer a {
     color: var(--very-dark-grayish-blue);
+}
+
+@media (max-width: 740px) {    
+    .footer {
+        position: static;
+        margin-bottom: 10px;
+    }
 }

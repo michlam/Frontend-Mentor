@@ -4,6 +4,8 @@
     --desaturated-dark-blue:     hsl(214, 17%, 51%);
     --grayish-blue:              hsl(212, 23%, 69%);
     --light-grayish-blue:        hsl(210, 46%, 95%);
+
+    font-size: 13px;
 }
 
 main {
@@ -94,4 +96,40 @@ section p {
 
 .share-icon:hover {
     background-color: var(--very-dark-grayish-blue);
+}
+
+@media (max-width: 740px) {    
+    main {
+        flex-direction: column;
+
+        width: 370px;
+        height: 550px;
+    }
+
+    .thumbnail {
+        min-width: 370px;
+        min-height: 240px;
+        width: 370px;
+        height: 240px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px; 
+        border-bottom-left-radius: 0px;
+        overflow: hidden;
+    }
+    
+    .thumbnail img {
+        height: 300px;
+    }
+
+    section {
+        margin: 40px 50px;
+    }
+
+    section p {
+        line-height: 170%;
+    }
+ 
+    .author-container {
+        margin-right: 60px;
+    }
 }
