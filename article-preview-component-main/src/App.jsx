@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import './App.css'
 import ShareComponent from './ShareComponent';
+import DrawerImage from './images/drawers.jpg';
+import AvatarImage from './images/avatar-michelle.jpg';
+import ShareImage from './images/icon-share.svg';
 
 function App() {
   const [shareClicked, setShareClicked] = useState(false);
@@ -13,7 +16,7 @@ function App() {
     <>
       <main>
         <div className='thumbnail'>
-          <img src="/src/images/drawers.jpg" alt='Drawers thumbnail'/>
+          <img src={DrawerImage} alt='Drawers thumbnail'/>
         </div>
         <section>
           <h1>
@@ -28,14 +31,14 @@ function App() {
           </p>
 
           <div className='contact-container'>
-            <img className='avatar' src='/src/images/avatar-michelle.jpg' />
+            <img className='avatar' src={AvatarImage} />
             <div className='author-container'>
               <h4>Michelle Appleton</h4>
               <p>28 Jun 2020</p>
             </div>
 
             <div className='share-icon' onClick={handleClick}>
-              <img src='/src/images/icon-share.svg'></img>
+              <img src={ShareImage}></img>
               {shareClicked ? <ShareComponent /> : null}
             </div>
           </div>

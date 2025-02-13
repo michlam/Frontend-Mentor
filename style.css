@@ -1,0 +1,112 @@
+:root {
+    /* Colours */
+    --dark-purple: rgb(46, 7, 63);
+    --medium-purple: rgb(122, 28, 172);
+    --light-purple: rgb(173, 73, 225);
+    --cyan: rgb(235, 211, 248);
+
+
+    --dark-blue: #330c44;
+    --peach: #fffade;
+    --light-green: #e8d5b5;
+
+
+    font-size: 16px;
+}
+
+body {
+    background: linear-gradient(to bottom, var(--dark-purple), var(--medium-purple));
+    background-repeat: no-repeat;
+
+    font-family: "Montserrat";
+    padding: 40px 80px;
+}
+
+header h1{
+    color: var(--peach);
+    font-weight: 600;
+    font-size: 4rem;
+    margin-bottom: 4px;
+}
+
+header p{
+    color: var(--light-green);
+    margin-top: 0;
+    margin-left: 5px;
+}
+
+header p>a{
+    color: var(--cyan);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    gap: 50px;
+}
+
+.card {
+    background-color: var(--dark-blue);
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.2);
+
+    width: 98%;
+    padding: 30px 0px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+legend {
+    color: var(--peach);
+    font-size: 1.6rem;
+    margin-left: 2em;
+}
+
+table {
+    width: 95%;
+    align-self: center;
+    border-collapse: collapse;
+    font-size: 18px;
+
+    color: var(--light-green);
+}
+
+table th {
+    color: var(--peach);
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+a {
+    color: var(--light-green);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.table-head-key {
+    text-align: left;
+    padding-left: 44px;
+}
+
+.table-key {
+    font-weight: 400;
+    color: var(--stone-600);
+    padding: 18px 0px 18px 45px;
+    width: 50%;
+    border-top: 1px solid rgb(238, 238, 238, 0.3);
+}
+
+.table-value {
+    font-weight: 600;
+    text-align: center;
+    margin-left:0px;
+    color: var(--brown-800);
+    border-top: 1px solid rgb(238, 238, 238, 0.3);
+}
