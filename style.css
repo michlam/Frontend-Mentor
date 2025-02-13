@@ -141,11 +141,13 @@ a:hover {
 
     legend {
         font-size: 1.3rem;
+        margin-left: 1em;
     }
 
     
     table {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
+        width: 90%;
     }
 
     table th {
@@ -153,16 +155,21 @@ a:hover {
         padding-left: 15px;
     }
 
-
     .table-key {
         font-weight: 300;
         font-size: 0.7rem;
+        width: 25%;
 
         padding: 18px 0px 18px 15px;
     }
 
     .table-value {
         font-weight: 350;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
+        padding-left: 15px;
+    }
+
+    .table-head-key {
+        padding-left: 15px;
     }
 }
