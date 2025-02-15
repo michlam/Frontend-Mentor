@@ -1,4 +1,5 @@
-export default function MainComponent() {
+export default function MainComponent(props) {
+
     return (
         <main className="main-component">
             <section className="content-container">
@@ -11,8 +12,13 @@ export default function MainComponent() {
                     <li>And much more!</li>
                 </ul>
 
-                <form>
-                    Form goes here!
+                <form onSubmit={props.login}>
+                    <div className="status-container">
+                        <label htmlFor="email">Email address</label>
+                        { props.error ? <label className="failed-status">Valid email required</label> : null }
+                    </div>
+                    <input id="email" name="email" placeholder="email@company.com" className={props.error ? "error" : ""}/>
+                    <button>Subscribe to monthly newsletter</button>
                 </form>
 
             </section>

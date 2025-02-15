@@ -3,7 +3,9 @@
   --blue-800: hsl(234, 29%, 20%);
   --blue-700: hsl(235, 18%, 26%);
   --grey:     hsl(0, 0%,58%);
+  --light-grey:     hsl(0, 0%, 90%);
   --white:    hsl(0, 0%, 100%);
+  --red: hsl(4, 100%, 67%);
 
   font-size: 16px;
   font-family: 'Roboto';
@@ -80,6 +82,53 @@ section.content-container {
   font-size: 0.9rem;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form > input {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  height: 45px;
+  padding-left: 15px;
+  font-family: 'Roboto';
+  margin-bottom: 20px;
+}
+
+.error {
+  border: 1px solid var(--red);
+  background-color: var(--light-grey);
+  color: var(--red);
+}
+
+form > button {
+  background-color: var(--blue-800);
+  border: none;
+  border-radius: 5px;
+  height: 45px;
+
+  color: var(--white);
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+form > button:hover {
+  background-color: var(--red);
+}
+
+.status-container {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.failed-status {
+  color: var(--red);
+}
 
 
 section.thumbnail-container > img {
