@@ -22,9 +22,14 @@ function App() {
     }
   }
 
+  function dismiss() {
+    setError(false);
+    setSubmitted(false);
+  }
+
   return (
     <>
-      {!submitted ? <MainComponent login={login} error={error}/> : <SubmittedComponent />}
+      {!submitted ? <MainComponent login={login} error={error}/> : <SubmittedComponent dismiss={dismiss}/>}
       <p className="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="https://github.com/michlam" target="_blank">Michael Lam</a>.

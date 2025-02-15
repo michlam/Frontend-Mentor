@@ -130,10 +130,65 @@ form > button:hover {
   color: var(--red);
 }
 
-
 section.thumbnail-container > img {
   width: 345px;
 }
+
+
+
+
+main.submitted-component{
+  background-color: var(--white);
+  width: 350px;
+  height: 350px;
+  border-radius: 35px;
+
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+
+  padding: 50px;
+}
+
+.submitted-component > img {
+  width: 55px;
+  margin-bottom: 0;
+}
+
+.submitted-component > h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  margin: 20px 0px;
+  line-height: 100%;
+  color: var(--blue-800)
+}
+
+.submitted-component > p {
+  font-weight: 450;
+  font-size: 0.8rem;
+  line-height: 175%;
+  color: var(--blue-800);
+  margin: 0;
+}
+
+.submitted-component > button {
+  background-color: var(--blue-800);
+  border: none;
+  border-radius: 5px;
+  height: 45px;
+
+  color: var(--white);
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+
+  margin-top: 60px;
+}
+
+.submitted-component > button:hover {
+  background-color: var(--red);
+}
+
+
 
 /* Attribution styling */
 .attribution { 
