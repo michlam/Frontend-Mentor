@@ -1,4 +1,7 @@
-export default function MainComponent(props) {
+import DesktopIllustration from '../assets/images/illustration-sign-up-desktop.svg';
+import MobileIllustration from '../assets/images/illustration-sign-up-mobile.svg';
+
+export default function MainComponent(props) { 
 
     return (
         <main className="main-component">
@@ -24,8 +27,8 @@ export default function MainComponent(props) {
             </section>
             <section className="thumbnail-container">
                 <picture>
-                    <source srcSet="./src/assets/images/illustration-sign-up-mobile.svg" media="(max-width: 800px)" />
-                    <img src="./src/assets/images/illustration-sign-up-desktop.svg"/>
+                    <source srcSet={MobileIllustration} media="(max-width: 800px)" />
+                    <img src={DesktopIllustration}/>
                 </picture>
             </section>
         </main>
