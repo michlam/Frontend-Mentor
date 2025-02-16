@@ -2,19 +2,23 @@ import { useState } from 'react'
 import MainComponent from './components/MainComponent.jsx';
 import SubmittedComponent from './components/SubmittedComponent.jsx';
 import './App.css'
+import './App-mobile.css'
 
 function App() {
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(false);
+  const [email, setEmail] = useState("");
 
   function login(event) {
     event.preventDefault();
 
     // Validate email format:
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const isValidEmail = (emailRegex.test(document.getElementById("email").value));
+    const emailValue = document.getElementById("email").value;
+    const isValidEmail = emailRegex.test(emailValue);
 
     if (isValidEmail) {
+      setEmail(emailValue);
       event.target.submit();
       setSubmitted(true);
     } else {
@@ -29,7 +33,7 @@ function App() {
 
   return (
     <>
-      {!submitted ? <MainComponent login={login} error={error}/> : <SubmittedComponent dismiss={dismiss}/>}
+      {!submitted ? <MainComponent login={login} error={error}/> : <SubmittedComponent dismiss={dismiss} email={email}/>}
       <p className="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="https://github.com/michlam" target="_blank">Michael Lam</a>.

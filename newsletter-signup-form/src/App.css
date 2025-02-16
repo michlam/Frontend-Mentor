@@ -130,12 +130,9 @@ form > button:hover {
   color: var(--red);
 }
 
-section.thumbnail-container > img {
+section.thumbnail-container > picture > img {
   width: 345px;
 }
-
-
-
 
 main.submitted-component{
   background-color: var(--white);

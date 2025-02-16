@@ -23,7 +23,10 @@ export default function MainComponent(props) {
 
             </section>
             <section className="thumbnail-container">
-                <img src="./src/assets/images/illustration-sign-up-desktop.svg"/>
+                <picture>
+                    <source srcSet="./src/assets/images/illustration-sign-up-mobile.svg" media="(max-width: 800px)" />
+                    <img src="./src/assets/images/illustration-sign-up-desktop.svg"/>
+                </picture>
             </section>
         </main>
     )
