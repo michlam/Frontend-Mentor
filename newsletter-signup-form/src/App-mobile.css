@@ -1,0 +1,71 @@
+@media (max-width: 800px) {  
+    main {
+        box-shadow: none;
+    }
+
+    main.main-component{
+        width: 375px;
+        height: 100vh;
+        border-radius: 0px;
+      
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    section.thumbnail-container > picture {
+        width: 100%;
+    }
+
+    section.thumbnail-container > picture > img {
+        width: 100%;
+    }
+
+    section.content-container {
+        margin: 0px 30px 80px 30px;
+    }
+  
+    .content-container > h1 {
+        font-size: 2.7rem;
+    }
+
+    
+    main.submitted-component{
+        background-color: var(--white);
+        width: 330px;
+        height: 100vh;
+        border-radius: 0px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+    }
+  
+    .submitted-component > img {
+        width: 65px;
+        margin-bottom: 15px;
+    }
+  
+    .submitted-component > h1 {
+        font-size: 2.6rem;
+        margin: 20px 0px;
+    }
+  
+    .submitted-component > p {
+        font-size: 0.9rem;
+    }
+  
+    .submitted-component > button {
+        margin-top: 30vh;
+    }
+  
+    .submitted-component > button:hover {
+        background-color: var(--red);
+    }
+
+    /* Attribution styling */
+    .attribution { 
+        color: #000000;
+    }
+}

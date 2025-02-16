@@ -1,0 +1,202 @@
+:root {
+  --blue-900: hsl(234, 29%, 10%);
+  --blue-800: hsl(234, 29%, 20%);
+  --blue-700: hsl(235, 18%, 26%);
+  --grey:     hsl(0, 0%,58%);
+  --light-grey:     hsl(0, 0%, 90%);
+  --white:    hsl(0, 0%, 100%);
+  --red: hsl(4, 100%, 67%);
+
+  font-size: 16px;
+  font-family: 'Roboto';
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+body, html {
+  background-color: var(--blue-700);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  box-shadow: 0px 8px 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+main.main-component{
+  background-color: var(--white);
+  width: 800px;
+  height: 550px;
+  border-radius: 35px;
+
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+section.content-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 20px 0px 50px;
+}
+
+.content-container {
+  color: var(--blue-900);
+}
+
+.content-container > h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.content-container > p {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.content-container > ul {
+  list-style: none;
+  padding-left: 0px;
+  margin-top: 10px;
+}
+
+.content-container > ul > li {
+  background-image: url("./assets/images/icon-success.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 18px 18px;
+  padding-left: 30px;
+  margin-bottom: 10px;
+
+  font-size: 0.9rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form > input {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  height: 45px;
+  padding-left: 15px;
+  font-family: 'Roboto';
+  margin-bottom: 20px;
+}
+
+.error {
+  border: 1px solid var(--red);
+  background-color: var(--light-grey);
+  color: var(--red);
+}
+
+form > button {
+  background-color: var(--blue-800);
+  border: none;
+  border-radius: 5px;
+  height: 45px;
+
+  color: var(--white);
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+form > button:hover {
+  background-color: var(--red);
+}
+
+.status-container {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.failed-status {
+  color: var(--red);
+}
+
+section.thumbnail-container > picture > img {
+  width: 345px;
+}
+
+main.submitted-component{
+  background-color: var(--white);
+  width: 350px;
+  height: 350px;
+  border-radius: 35px;
+
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+
+  padding: 50px;
+}
+
+.submitted-component > img {
+  width: 55px;
+  margin-bottom: 0;
+}
+
+.submitted-component > h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  margin: 20px 0px;
+  line-height: 100%;
+  color: var(--blue-800)
+}
+
+.submitted-component > p {
+  font-weight: 450;
+  font-size: 0.8rem;
+  line-height: 175%;
+  color: var(--blue-800);
+  margin: 0;
+}
+
+.submitted-component > button {
+  background-color: var(--blue-800);
+  border: none;
+  border-radius: 5px;
+  height: 45px;
+
+  color: var(--white);
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+
+  margin-top: 60px;
+}
+
+.submitted-component > button:hover {
+  background-color: var(--red);
+}
+
+
+
+/* Attribution styling */
+.attribution { 
+  font-size: 0.7rem;
+  text-align: center;
+  
+  position: fixed;
+  bottom: 0;
+  color: var(--white);
+}
+
+.attribution a {
+  color: var(--grey);
+}
