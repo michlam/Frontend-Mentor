@@ -9,7 +9,7 @@ export default function Main() {
 
     const TimecardComponents = DataArray.map((data, index) => {
         return (
-            <Timecard key={data.title} colour={COLOUR_ARRAY[index]}/>
+            <Timecard key={data.title} id={data.title} colour={COLOUR_ARRAY[index]}/>
         ) 
     });
 
