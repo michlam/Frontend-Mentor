@@ -33,6 +33,8 @@ body, #root {
 
 main {
   background-color: red;
+  width: 1000px;
+  height: 470px;
 }
 
 /* FOOTER */
