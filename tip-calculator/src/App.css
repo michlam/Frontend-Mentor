@@ -42,8 +42,27 @@ header > h3 {
 
 main {
   background-color: white;
-  width: 840px;
+  width: 800px;
   height: 430px;
+  border-radius: 30px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20px 0;
+}
+
+.inputs {
+  background-color: red;
+  height: 90%;
+}
+
+.display {
+  background-color: var(--very-dark-cyan);
+  height: 90%;
+  border-radius: 20px;
 }
 
 

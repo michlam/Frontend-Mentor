@@ -1,7 +1,11 @@
+import Inputs from "./Inputs"
+import Display from "./Display"
+
 export default function Main() {
     return (
         <main>
-            Hello Main
+            <Inputs />
+            <Display />
         </main>
     )
 }
