@@ -24,9 +24,10 @@ export default function Timecard(props) {
                     <img src={EllipsesIcon} />
                 </div>
 
-                <h1>{props.currTimeNum}hrs</h1>
-                <p>Last {props.timeword} - {props.prevTimeNum}hrs</p>
-                
+                <div className="tc-bot">
+                    <h1>{props.currTimeNum}hrs</h1>
+                    <p>Last {props.timeword} - {props.prevTimeNum}hrs</p>
+                </div>
             </div>
         </section>
     )

@@ -56,13 +56,13 @@ section.profile {
   margin: 25px 25px 0px;
 }
 
-.profile-top > p {
+.profile-report > p {
   margin: 25px 30px 0px;
   color: var(--pale-blue);
   font-size: 0.8rem;
 }
 
-.profile-top > h1 {
+.profile-report > h1 {
   margin: 12px 30px 0px;
   font-weight: 300;
   font-size: 2.3rem;
@@ -123,13 +123,13 @@ section.timecard {
   height: 5px;
 }
 
-.timecard-content > h1 {
+.tc-bot > h1 {
   font-size: 2.8rem;
   font-weight: 300;
   margin: 0 25px;
 }
 
-.timecard-content > p {
+.tc-bot > p {
   font-size: 0.8rem;
   font-weight: 250;
   letter-spacing: 5%;
@@ -162,9 +162,6 @@ section.work {
   background-image: url("./assets/images/icon-work.svg");
 }
 
-
-
-
 /* FOOTER */
 .attribution { 
   font-size: 0.7rem;
@@ -179,3 +176,98 @@ section.work {
   color: var(--pale-blue);
 }
 
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {  
+  body, #root {
+    display: flex;
+    width: 100vw;
+    min-width: 375px;
+    height: 1360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  main {
+    width: 90%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.profile {
+    background-color: var(--dark-blue);
+    border-radius: 15px;
+
+    margin-top: 25px;
+    height: 225px;
+  }
+
+  .profile-top {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .profile-top > img {
+    width: 60px;
+    height: 60px;
+    margin: 0px 25px;
+  }
+
+  .profile-report > p {
+    margin: 10px 0px 0px;
+    color: var(--pale-blue);
+    font-size: 0.8rem;
+  }
+
+  .profile-report > h1 {
+    margin: 3px 0px 10px;
+    font-size: 1.4rem;
+  }
+
+  .profile-bot {
+    padding: 10px 30px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+  }
+  
+  div.timecards-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.timecard {
+    background-position: 230px -5px;
+  }
+
+  .tc-bot {
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .tc-bot > h1 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 0 25px 0px;
+  }
+
+  .timecard-content > p {
+    font-size: 0.8rem;
+    font-weight: 250;
+    letter-spacing: 5%;
+    margin: 10px 25px;
+
+    color: var(--pale-blue)
+  }
+}

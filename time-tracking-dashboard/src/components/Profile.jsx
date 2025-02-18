@@ -9,8 +9,10 @@ export default function Profile(props) {
         <section className="profile">
             <div className="profile-top">
                 <img src={Avatar} />
-                <p>Report for</p>
-                <h1>Jeremy Robson</h1>
+                <div className="profile-report">
+                    <p>Report for</p>
+                    <h1>Jeremy Robson</h1>
+                </div>
             </div>
 
             <div className="profile-bot">
