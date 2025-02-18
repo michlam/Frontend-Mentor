@@ -38,6 +38,49 @@ section.profile {
   border-radius: 15px;
 }
 
+.profile-top {
+  background-color: var(--blue);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 65%;
+  border-radius: 15px;
+}
+
+.profile-top > img {
+  width: 70px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+
+  margin: 25px 25px 0px;
+}
+
+.profile-top > p {
+  margin: 25px 30px 0px;
+  color: var(--pale-blue);
+  font-size: 0.8rem;
+}
+
+.profile-top > h1 {
+  margin: 12px 30px 0px;
+  font-weight: 300;
+  font-size: 2.3rem;
+}
+
+.profile-bot {
+  padding: 10px 30px 0px;
+  color: var(--desaturated-blue);
+}
+
+.profile-bot > h3 {
+  font-weight: 300; 
+  font-size: 1.1rem;
+  margin: 20px 0px;
+  cursor: pointer;
+}
+
+
 div.timecards-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -48,6 +91,51 @@ section.timecard {
   border-radius: 15px;
   background-repeat: no-repeat;
   background-position: 125px -5px;
+  
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.timecard-content {
+  background-color: var(--dark-blue);
+  width: 100%;
+  height: 80%;
+  border-radius: 11px;
+  cursor: pointer;
+}
+
+.timecard-content:hover {
+  background-color: var(--desaturated-blue);
+}
+
+.tc-top {
+  margin: 15px 25px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.tc-top > img {
+  width: 18px;
+  height: 5px;
+}
+
+.timecard-content > h1 {
+  font-size: 2.8rem;
+  font-weight: 300;
+  margin: 0 25px;
+}
+
+.timecard-content > p {
+  font-size: 0.8rem;
+  font-weight: 250;
+  letter-spacing: 5%;
+  margin: 10px 25px;
+
+  color: var(--pale-blue)
 }
 
 section.exercise {
