@@ -1,7 +1,8 @@
 export default function Header() {
     return (
         <header>
-            Hello header
+            <h3>SPLI</h3>
+            <h3>TTER</h3>
         </header>
     )
 }

@@ -1,5 +1,7 @@
 #root {
-  font-size: 16px;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Space Mono";
 
   /* COLOURS */
   --strong-cyan: hsl(172, 67%, 45%);
@@ -10,24 +12,38 @@
   --light-grayish-cyan: hsl(185, 41%, 84%);
   --very-light-grayish-cyan: hsl(189, 41%, 97%);
   --white: hsl(0, 0%, 100%);
+
 }
 
 body, #root {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  
   width: 100vw;
   height: 100vh;
-  justify-content: center;
-  align-items: center;
-
   margin: 0;
-  
-  font-family: "Rubik";
   background-color: var(--light-grayish-cyan);
 }
 
-main {
+header {
+  margin: 130px 0px 70px;
+}
 
+header > h3 {
+  margin: 0;
+  padding: 0;
+  
+  font-size: 1.3rem;
+  font-weight: 550;
+  letter-spacing: 50%;
+  color: var(--very-dark-cyan);
+}
+
+main {
+  background-color: white;
+  width: 840px;
+  height: 430px;
 }
 
 
