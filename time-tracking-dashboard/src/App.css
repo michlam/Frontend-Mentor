@@ -1,0 +1,273 @@
+#root {
+  font-size: 16px;
+
+  /* COLOURS */
+  --blue: hsl(246, 80%, 60%);
+
+  --very-dark-blue: hsl(226, 43%, 10%);
+  --dark-blue: hsl(235, 46%, 20%);
+  --desaturated-blue: hsl(235, 45%, 61%);
+  --pale-blue: hsl(236, 100%, 87%);
+}
+
+body, #root {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  
+  font-family: "Rubik";
+  background-color: var(--very-dark-blue);
+  color: white;
+}
+
+main {
+  width: 1000px;
+  height: 470px;
+
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 25px;
+}
+
+section.profile {
+  background-color: var(--dark-blue);
+  border-radius: 15px;
+}
+
+.profile-top {
+  background-color: var(--blue);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 65%;
+  border-radius: 15px;
+}
+
+.profile-top > img {
+  width: 70px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+
+  margin: 25px 25px 0px;
+}
+
+.profile-report > p {
+  margin: 25px 30px 0px;
+  color: var(--pale-blue);
+  font-size: 0.8rem;
+}
+
+.profile-report > h1 {
+  margin: 12px 30px 0px;
+  font-weight: 300;
+  font-size: 2.3rem;
+}
+
+.profile-bot {
+  padding: 10px 30px 0px;
+  color: var(--desaturated-blue);
+}
+
+.profile-bot > h3 {
+  font-weight: 300; 
+  font-size: 1.1rem;
+  margin: 20px 0px;
+  cursor: pointer;
+}
+
+
+div.timecards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+section.timecard {
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-position: 125px -5px;
+  
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.timecard-content {
+  background-color: var(--dark-blue);
+  width: 100%;
+  height: 80%;
+  border-radius: 11px;
+  cursor: pointer;
+}
+
+.timecard-content:hover {
+  background-color: var(--desaturated-blue);
+}
+
+.tc-top {
+  margin: 15px 25px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.tc-top > img {
+  width: 18px;
+  height: 5px;
+}
+
+.tc-bot > h1 {
+  font-size: 2.8rem;
+  font-weight: 300;
+  margin: 0 25px;
+}
+
+.tc-bot > p {
+  font-size: 0.8rem;
+  font-weight: 250;
+  letter-spacing: 5%;
+  margin: 10px 25px;
+
+  color: var(--pale-blue)
+}
+
+section.exercise {
+  background-image: url("./assets/images/icon-exercise.svg");
+}
+
+section.play {
+  background-image: url("./assets/images/icon-play.svg");
+}
+
+section.self-care {
+  background-image: url("./assets/images/icon-self-care.svg");
+}
+
+section.social {
+  background-image: url("./assets/images/icon-social.svg");
+}
+
+section.study {
+  background-image: url("./assets/images/icon-study.svg");
+}
+
+section.work {
+  background-image: url("./assets/images/icon-work.svg");
+}
+
+/* FOOTER */
+.attribution { 
+  font-size: 0.7rem;
+  text-align: center;
+  
+  position: fixed;
+  bottom: 10px;
+  color: var(--white);
+}
+
+.attribution a {
+  color: var(--pale-blue);
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {  
+  body, #root {
+    display: flex;
+    width: 100vw;
+    min-width: 375px;
+    height: 1360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  main {
+    width: 90%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.profile {
+    background-color: var(--dark-blue);
+    border-radius: 15px;
+
+    margin-top: 25px;
+    height: 225px;
+  }
+
+  .profile-top {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .profile-top > img {
+    width: 60px;
+    height: 60px;
+    margin: 0px 25px;
+  }
+
+  .profile-report > p {
+    margin: 10px 0px 0px;
+    color: var(--pale-blue);
+    font-size: 0.8rem;
+  }
+
+  .profile-report > h1 {
+    margin: 3px 0px 10px;
+    font-size: 1.4rem;
+  }
+
+  .profile-bot {
+    padding: 10px 30px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+  }
+  
+  div.timecards-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.timecard {
+    background-position: 230px -5px;
+  }
+
+  .tc-bot {
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .tc-bot > h1 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 0 25px 0px;
+  }
+
+  .timecard-content > p {
+    font-size: 0.8rem;
+    font-weight: 250;
+    letter-spacing: 5%;
+    margin: 10px 25px;
+
+    color: var(--pale-blue)
+  }
+}
