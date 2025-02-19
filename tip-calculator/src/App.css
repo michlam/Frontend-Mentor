@@ -173,13 +173,99 @@ main {
 
 
 
-
-
 .display {
   background-color: var(--very-dark-cyan);
   height: 90%;
   border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.tip-amount-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 40px;
+}
+
+.tip-amount-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tip-amount-left > h4 {
+  margin: 0;
+
+  font-size: 0.9rem;
+  color: var(--white);
+}
+
+.tip-amount-left > p {
+  margin: 0;
+
+  font-size: 0.7rem;
+  color: var(--strong-cyan);
+}
+
+.tip-amount-container > h1 {
+  margin: 0;
+  color: var(--strong-cyan);
+}
+
+.total-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 20px;
+  margin-bottom: 105px;
+}
+
+.total-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.total-left > h4 {
+  margin: 0;
+
+  font-size: 0.9rem;
+  color: var(--white);
+}
+
+.total-left > p {
+  margin: 0;
+
+  font-size: 0.7rem;
+  color: var(--strong-cyan);
+}
+
+.total-container > h1 {
+  margin: 0;
+  color: var(--strong-cyan);
+}
+
+.display > button {
+  width: 80%;
+  padding: 7px 0px;
+
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: "Space Mono";
+  color: var(--very-dark-cyan);
+}
+
+
+
+
+
+
+
+
+
 
 
 
