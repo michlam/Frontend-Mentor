@@ -89,13 +89,12 @@ main {
 }
 
 .tip-container {
-  padding: 0px 25px;
+  padding: 10px 25px 5px;
 }
 
 .tip-container > label {
   font-size: 0.9rem;
   color: var(--dark-grayish-cyan);
-  margin-bottom: 5px;
 }
 
 .tip-buttons {
@@ -140,7 +139,35 @@ main {
 }
 
 
+.people-num-container {
+  padding: 25px 25px;
+  display: flex;
+  flex-direction: column;
+}
 
+.people-num-container > label {
+  font-size: 0.9rem;
+  color: var(--dark-grayish-cyan);
+  margin-bottom: 5px;
+}
+
+.people-num-container > input {
+  border: none;
+  border-radius: 5px;
+  background-color: var(--very-light-grayish-cyan);
+  background-image: url("./assets//images/icon-person.svg");
+  background-position: 20px 13px;
+  background-repeat: no-repeat;
+  height: 40px;
+
+  text-align: right;
+  padding-right: 20px;
+
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: "Space Mono";
+  color: var(--strong-cyan);
+}
 
 
 
