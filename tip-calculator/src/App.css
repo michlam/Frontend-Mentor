@@ -171,10 +171,6 @@ main {
   color: var(--strong-cyan);
 }
 
-
-
-
-
 .display {
   background-color: var(--very-dark-cyan);
   height: 90%;
@@ -262,17 +258,6 @@ main {
   cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .attribution { 
   font-size: 0.7rem;
   text-align: center;
@@ -284,4 +269,81 @@ main {
 
 .attribution a {
   color: var(--very-dark-cyan);
+}
+
+
+
+
+@media (max-width: 850px) {  
+  body, #root {
+    min-width: 375px;
+    height: 100vh;
+    min-height: 812px;
+  }
+
+  header {
+    margin: 5% 0;
+  }
+
+  main {
+    width: 100vw;
+    min-width: 375px;
+    height: 100vh;
+    min-height: 700px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .inputs {
+    margin-top: 3%;
+    height: 45%;
+  }
+
+  .bill-container {
+    padding: 10px 25px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tip-container {
+    padding: 0px 25px 5px;
+  }
+
+  .people-num-container {
+    padding: 10px 25px;
+  }
+
+
+  .display {
+    width: 85%;
+    height: 35%;
+  }
+
+  .tip-amount-container {
+    margin-top: 12px;
+  }
+
+  .total-container {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+
+  .attribution { 
+    font-size: 0.5r6m;
+    
+    position: fixed;
+    bottom: 40px;
+    color: var(--black);
+  }
+  
+  .attribution a {
+    color: var(--very-dark-cyan);
+  }
+
 }
