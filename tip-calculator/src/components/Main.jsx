@@ -7,9 +7,13 @@ export default function Main() {
     const [tip, setTip] = useState(0);
     const [peopleNum, setPeopleNum] = useState(0);
 
+    function changeTip(newTip) {
+        setTip(newTip);
+    }
+
     return (
         <main>
-            <Inputs />
+            <Inputs tip={tip} changeTip={changeTip}/>
             <Display />
         </main>
     )
