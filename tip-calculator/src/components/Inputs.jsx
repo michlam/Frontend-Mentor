@@ -4,6 +4,7 @@ import { useState } from "react";
 
 export default function Inputs(props) {
     const [billError, setBillError] = useState(false);
+    const [tipError, setTipError] = useState(false);
     const [peopleNumError, setPeopleNumError] = useState(false);
 
     const activeButtonStyle = {
@@ -23,6 +24,31 @@ export default function Inputs(props) {
         }
     }
 
+    function handleTipChange(value) {
+        props.setTip(value);
+        const customField = document.getElementById("customTip");
+        customField.value = "";
+        setTipError(false);
+    }
+
+    function handleCustomTipChange(event) {
+        let num = event.target.value;
+        if (num === "") {
+            setTipError(false);
+            props.setTip(0);
+            return;
+        }
+
+        num = Number(num);
+
+        if (isNaN(num) || num < 0) {
+            setTipError(true);
+        } else {
+            setTipError(false);
+            props.setTip(num);
+        }
+    }
+
     function handlePeopleNumChange(event) {
         let num = event.target.value;
         num = Number(num);
@@ -33,8 +59,6 @@ export default function Inputs(props) {
             setPeopleNumError(false);
             props.setPeopleNum(num);
         }
-
-
     }
 
     return (
@@ -46,44 +70,45 @@ export default function Inputs(props) {
             </div>
 
             <div className="tip-container">
-                <label>Select Tip%</label>
+                <label>Select Tip% {tipError ? " - invalid number" : ""}</label>
                 <div className="tip-buttons">
                     <button 
                         style={props.tip === 5 ? activeButtonStyle : null}
-                        onClick={() => props.changeTip(5)}
+                        onClick={() => handleTipChange(5)}
                     >    
                         5%
                     </button>
 
                     <button 
                         style={props.tip === 10 ? activeButtonStyle : null}
-                        onClick={() => props.changeTip(10)}
+                        onClick={() => handleTipChange(10)}
                     >   
                         10%
                     </button>
 
                     <button 
                         style={props.tip === 15 ? activeButtonStyle : null}
-                        onClick={() => props.changeTip(15)}
+                        onClick={() => handleTipChange(15)}
                     >   
                         15%
                     </button>                    
                     
                     <button 
                         style={props.tip === 25 ? activeButtonStyle : null}
-                        onClick={() => props.changeTip(25)}
+                        onClick={() => handleTipChange(25)}
                     >   
                         25%
                     </button>                    
                     
                     <button 
                         style={props.tip === 50 ? activeButtonStyle : null}
-                        onClick={() => props.changeTip(50)}
+                        onClick={() => handleTipChange(50)}
                     >   
                         50%
                     </button>
                     
-                    <input placeholder="Custom"/>
+                    <input id="customTip" placeholder="Custom" onChange={handleCustomTipChange} 
+                            style={tipError ? {border: "2px solid red"} : null}/>
                 </div>
             </div>
 

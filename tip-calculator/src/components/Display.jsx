@@ -1,5 +1,5 @@
 export default function Display(props) {
-    const tip = props.bill.toFixed(2);
+    const tip = props.tip.toFixed(2);
     const total = props.peopleNum.toFixed(2);
 
     return (
