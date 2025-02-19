@@ -16,7 +16,7 @@ export default function Inputs(props) {
                     <button>15%</button>
                     <button>25%</button>
                     <button>50%</button>
-                    <input />
+                    <input placeholder="Custom"/>
                 </div>
             </div>
 

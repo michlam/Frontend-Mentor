@@ -88,6 +88,57 @@ main {
   color: var(--strong-cyan);
 }
 
+.tip-container {
+  padding: 0px 25px;
+}
+
+.tip-container > label {
+  font-size: 0.9rem;
+  color: var(--dark-grayish-cyan);
+  margin-bottom: 5px;
+}
+
+.tip-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.tip-buttons > button {
+  background-color: var(--very-dark-cyan);
+  border: none;
+  border-radius: 5px;
+  padding: 7px;
+
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: "Space Mono";
+  color: var(--white);
+
+  cursor: pointer;
+}
+
+.tip-buttons > button:hover {
+  background-color: var(--light-grayish-cyan);
+  color: var(--very-dark-cyan);
+}
+
+.tip-buttons > input {
+  background-color: var(--very-light-grayish-cyan);
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: "Space Mono";
+  color: var(--very-dark-cyan);
+}
+
 
 
 
