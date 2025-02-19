@@ -1,5 +1,6 @@
 export default function Display(props) {
     const tip = props.bill.toFixed(2);
+    const total = props.peopleNum.toFixed(2);
 
     return (
         <div className="display">
@@ -18,10 +19,10 @@ export default function Display(props) {
                     <p>/ person</p>
                 </div>
 
-                <h1>$0.00</h1>
+                <h1>{`$${total}`}</h1>
             </div>
 
-            <button>RESET</button>
+            <button onClick={props.reset}>RESET</button>
 
         </div>
     )

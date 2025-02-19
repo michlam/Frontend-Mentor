@@ -4,6 +4,8 @@ import { useState } from "react";
 
 export default function Inputs(props) {
     const [billError, setBillError] = useState(false);
+    const [peopleNumError, setPeopleNumError] = useState(false);
+
     const activeButtonStyle = {
         backgroundColor: "hsl(172, 67%, 45%)",
         color: "hsl(183, 100%, 15%)"
@@ -21,11 +23,26 @@ export default function Inputs(props) {
         }
     }
 
+    function handlePeopleNumChange(event) {
+        let num = event.target.value;
+        num = Number(num);
+
+        if (!Number.isInteger(num) || num < 0) {
+            setPeopleNumError(true);
+        } else {
+            setPeopleNumError(false);
+            props.setPeopleNum(num);
+        }
+
+
+    }
+
     return (
         <div className="inputs">
             <div className="bill-container">
-                <label htmlFor="billInput">Bill</label>
-                <input name="billInput" placeholder="0" onChange={handleBillChange}/>
+                <label htmlFor="billInput">Bill {billError ? "- enter a valid number" : ""}</label>
+                <input name="billInput" placeholder="0" onChange={handleBillChange} 
+                        style={billError ? {border: "2px solid red"} : null}/>
             </div>
 
             <div className="tip-container">
@@ -71,8 +88,9 @@ export default function Inputs(props) {
             </div>
 
             <div className="people-num-container">
-                <label htmlFor="peopleNum">Number of people</label>
-                <input name="peopleNum" placeholder="0" />
+                <label htmlFor="peopleNum">People {peopleNumError ? " - enter a valid number" : ""}</label>
+                <input name="peopleNum" placeholder="0" onChange={handlePeopleNumChange}
+                        style={peopleNumError ? {border: "2px solid red"} : null}/>
             </div>
         </div>
     )

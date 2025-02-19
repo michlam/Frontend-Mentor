@@ -11,10 +11,16 @@ export default function Main() {
         setTip(newTip);
     }
 
+    function reset() {
+        setBill(0);
+        setTip(0);
+        setPeopleNum(0);
+    }
+
     return (
         <main>
-            <Inputs tip={tip} changeTip={changeTip} setBill={setBill}/>
-            <Display bill={bill}/>
+            <Inputs tip={tip} changeTip={changeTip} setBill={setBill} setPeopleNum={setPeopleNum}/>
+            <Display bill={bill} tip={tip} peopleNum={peopleNum} reset={reset}/>
         </main>
     )
 }
