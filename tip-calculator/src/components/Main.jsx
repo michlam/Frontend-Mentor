@@ -13,8 +13,8 @@ export default function Main() {
 
     return (
         <main>
-            <Inputs tip={tip} changeTip={changeTip}/>
-            <Display />
+            <Inputs tip={tip} changeTip={changeTip} setBill={setBill}/>
+            <Display bill={bill}/>
         </main>
     )
 }

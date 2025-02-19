@@ -1,4 +1,6 @@
-export default function Display() {
+export default function Display(props) {
+    const tip = props.bill.toFixed(2);
+
     return (
         <div className="display">
             <div className="tip-amount-container">
@@ -7,7 +9,7 @@ export default function Display() {
                     <p>/ person</p>
                 </div>
 
-                <h1>$0.00</h1>
+                <h1>{`$${tip}`}</h1>
             </div>
 
             <div className="total-container">

@@ -1,16 +1,31 @@
 // The inputs component where most of the user inputs will be handled.
 
+import { useState } from "react";
+
 export default function Inputs(props) {
+    const [billError, setBillError] = useState(false);
     const activeButtonStyle = {
         backgroundColor: "hsl(172, 67%, 45%)",
         color: "hsl(183, 100%, 15%)"
+    }
+
+    function handleBillChange(event) {
+        let num = event.target.value;
+        num = Number(num);
+
+        if (isNaN(num) || num < 0) {
+            setBillError(true);
+        } else {
+            setBillError(false);
+            props.setBill(num);
+        }
     }
 
     return (
         <div className="inputs">
             <div className="bill-container">
                 <label htmlFor="billInput">Bill</label>
-                <input name="billInput" placeholder="0"/>
+                <input name="billInput" placeholder="0" onChange={handleBillChange}/>
             </div>
 
             <div className="tip-container">
