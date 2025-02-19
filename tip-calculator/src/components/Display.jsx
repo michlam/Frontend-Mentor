@@ -1,6 +1,15 @@
 export default function Display(props) {
-    const tip = props.tip.toFixed(2);
-    const total = props.peopleNum.toFixed(2);
+    let tip = (props.bill * ((props.tip * 0.01)) / props.peopleNum).toFixed(2);
+    if (isNaN(tip) || !isFinite(tip)) {
+        tip = 0;
+        tip = tip.toFixed(2);
+    }
+
+    let total = (props.bill * (1 + (props.tip * 0.01)) / props.peopleNum).toFixed(2);
+    if (isNaN(total) || !isFinite(total)) {
+        total = 0;
+        total = total.toFixed(2);
+    }
 
     return (
         <div className="display">

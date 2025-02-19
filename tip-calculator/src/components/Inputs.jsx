@@ -53,7 +53,7 @@ export default function Inputs(props) {
         let num = event.target.value;
         num = Number(num);
 
-        if (!Number.isInteger(num) || num < 0) {
+        if (!Number.isInteger(num) || num <= 0) {
             setPeopleNumError(true);
         } else {
             setPeopleNumError(false);
