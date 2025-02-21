@@ -5,12 +5,14 @@ import Thanks from "./components/Thanks.jsx"
 import {useState} from "react"
 
 function App() {
-  const [submitted, setSubmitted] = useState(true);
+  const [submitted, setSubmitted] = useState(false);
   const [rating, setRating] = useState(null);
 
   return (
     <>
-      {!submitted ? <Main /> : <Thanks/>}
+      {!submitted 
+        ? <Main setRating={setRating} setSubmitted={setSubmitted} currentRating={rating}/> 
+        : <Thanks/>}
       <Footer />
     </>
   )

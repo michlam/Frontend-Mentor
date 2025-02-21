@@ -4,11 +4,19 @@ export default function Main(props) {
     const ratingsArray = [1, 2, 3, 4, 5];
     const RatingsElements = ratingsArray.map((rating) => {
         return (
-            <button className="circle" key={rating}>
+            <button className={`circle ${rating === props.currentRating ? "selected" : ""}`} 
+                    key={rating} 
+                    onClick={() => props.setRating(rating)}>
                 <h3>{rating}</h3>
             </button>
         )
     })
+
+    function handleSubmit() {
+        if (props.currentRating) {
+            props.setSubmitted(true);
+        }
+    }
 
     return (
         <main className="rating">
@@ -25,7 +33,7 @@ export default function Main(props) {
                 {RatingsElements}
             </section>
 
-            <button className="submit">SUBMIT</button>
+            <button className="submit" onClick={handleSubmit}>SUBMIT</button>
         </main>
     )
 } 

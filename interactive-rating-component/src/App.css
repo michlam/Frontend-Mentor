@@ -57,6 +57,16 @@ button.circle {
     cursor: pointer;
 }
 
+button.circle:hover {
+    background-color: var(--orange);
+    color: var(--very-dark-blue)
+}
+
+button.selected {
+    background-color: white;
+    color: var(--very-dark-blue);   
+}
+
 section.content {
     margin: 15px 0px 0px;
 }
@@ -92,6 +102,10 @@ button.submit {
     font-family: "Overpass";
     color: var(--very-dark-blue);
     cursor: pointer;
+}
+
+button.submit:hover {
+    background-color: white;
 }
 
 
