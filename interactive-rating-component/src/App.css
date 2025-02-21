@@ -94,6 +94,57 @@ button.submit {
     cursor: pointer;
 }
 
+
+
+
+
+
+main.thanks {
+    background-color: var(--medium-dark-blue);
+    width: 350px;
+    height: 350px;
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    color: var(--light-grey)
+}
+
+main.thanks > img {
+    margin-top: 20px;
+    height: 110px;
+}
+
+div.reminder {
+    margin-top: 30px;
+    background-color: var(--dark-blue);
+    color: var(--orange);
+    padding: 8px 35px 6px;
+    border-radius: 20px;
+}
+
+section.thanks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.thanks > h1 {
+    margin: 40px 0px 0px;
+    color: white;
+    font-size: 1.8rem;
+}
+
+section.thanks > p {
+    margin: 7px 8px 0px;
+    text-align: center;
+    font-size: 0.93rem;
+    line-height: 160%;
+}
+
+
 /* FOOTER */
 .attribution { 
     font-size: 0.7rem;

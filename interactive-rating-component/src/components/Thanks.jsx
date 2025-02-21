@@ -1,8 +1,18 @@
-export default function Thanks() {
+import ThanksImage from "../assets/images/illustration-thank-you.svg"
+
+export default function Thanks(props) {
     return (
-        <div className="attribution">
-            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-            Coded by <a href="https://github.com/michlam" target="_blank">Michael Lam</a>.
-        </div>
+        <main className="thanks">
+            <img src={ThanksImage} />
+
+            <div className="reminder">
+                You selected {props.rating} out of 5
+            </div>
+
+            <section className="thanks">
+                <h1>Thank you!</h1>
+                <p>We appreciate you taking the time to give a rating. If you ever need more suport, don't hesitate to get in touch!</p>
+            </section>
+        </main>
     )
 } 

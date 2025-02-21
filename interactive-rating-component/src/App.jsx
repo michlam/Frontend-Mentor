@@ -5,7 +5,7 @@ import Thanks from "./components/Thanks.jsx"
 import {useState} from "react"
 
 function App() {
-  const [submitted, setSubmitted] = useState(false);
+  const [submitted, setSubmitted] = useState(true);
   const [rating, setRating] = useState(null);
 
   return (
