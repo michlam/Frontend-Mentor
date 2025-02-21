@@ -173,3 +173,21 @@ section.thanks > p {
     color: var(--light-grey);
 }
   
+
+@media (max-width: 450px) {
+    :root {
+        font-size: 14px
+    }
+
+    main.rating {
+        width: 300px;
+        border-radius: 15px;
+        padding: 20px;
+    }
+
+    main.thanks {
+        width: 300px;
+        border-radius: 15px;
+        padding: 20px;
+    }
+}
