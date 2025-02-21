@@ -6,7 +6,7 @@ export default function Thanks(props) {
             <img src={ThanksImage} />
 
             <div className="reminder">
-                You selected {props.rating} out of 5
+                You selected {props.currentRating} out of 5
             </div>
 
             <section className="thanks">

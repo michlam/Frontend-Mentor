@@ -12,7 +12,7 @@ function App() {
     <>
       {!submitted 
         ? <Main setRating={setRating} setSubmitted={setSubmitted} currentRating={rating}/> 
-        : <Thanks/>}
+        : <Thanks currentRating={rating}/>}
       <Footer />
     </>
   )
