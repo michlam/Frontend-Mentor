@@ -17,5 +17,53 @@ body, #root {
   margin: 0;
 
   font-family: "Work Sans";
+}
+
+body {
   background-color: var(--light-pink);
+  background-image: url("./assets/images/background-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100vw auto;
+}
+
+main.card {
+  background-color: var(--white);
+  width: 540px;
+  padding: 40px 40px 40px;
+  border-radius: 15px;
+  box-shadow: 0px 3px 20px 5px rgb(0 0 0 / 20%);
+}
+
+section.title {
+  margin-bottom: 30px;
+  display: flex;
+}
+
+section.title > h1 {
+  margin: 0px 40px 0px;
+  font-weight: 700;
+  font-size: 3.9rem;
+}
+
+summary {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+
+
+
+
+/* FOOTER */
+.attribution { 
+  font-size: 0.7rem;
+  text-align: center;
+  
+  position: fixed;
+  bottom: 10px;
+  color: var(--dark-purple);
+}
+
+.attribution a {
+  color: var(--grayish-purple);
 }
