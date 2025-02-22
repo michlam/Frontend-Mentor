@@ -37,6 +37,7 @@ main.card {
 section.title {
   margin-bottom: 0px;
   display: flex;
+  align-items: center;
 }
 
 section.title > h1 {
@@ -84,10 +85,6 @@ hr {
   border: 1px solid rgba(212, 212, 212, 0.13);
 }
 
-
-
-
-
 /* FOOTER */
 .attribution { 
   font-size: 0.7rem;
@@ -100,4 +97,42 @@ hr {
 
 .attribution a {
   color: var(--grayish-purple);
+}
+
+
+
+@media (max-width: 620px) {
+  body {
+    background-image: url("./assets/images/background-pattern-mobile.svg");
+  }
+
+  main.card {
+    width: 275px;
+    padding: 30px 30px 30px;
+    border-radius: 8px;
+  }
+
+  section.title > img {
+    width: 25px;
+    height: 25px;
+  }
+
+  section.title > h1 {
+    margin: 0px 20px 0px;
+    font-size: 2rem;
+  }
+
+  details {
+    margin: 20px 0px 20px;
+  }
+
+    
+  details > summary {
+    font-size: 1rem;
+  }
+
+  details > p {
+    font-size: 0.9rem;
+  }
+
 }
